@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Project</title>
+
+      <style media="screen">
+
+      /* NOTE: Udacity Logo */
+
+        .logo {
+          max-width: 20%;
+          margin-top: 40px;
+          margin-left: 20px;
+        }
+
+        /* NOTE: Header Headlines */
+
+        .headlines {
+          font-style: normal;
+          font-size: 1.5vw;
+          font-family:sans-serif;
+          color: #2d3c49;
+          float: right;
+          margin-top: 30px;
+          margin-right: 50px;
+          text-shadow: 2px 2px lightgray;
+        }
+
+        h3 {
+          text-align: right;
+          color: red;
+        }
+
+        hr {
+          display: block;
+          margin-top: 2em;
+          margin-bottom: 0.5em;
+          margin-left: 50px;
+          margin-right: 50px;
+          border-style:solid;
+          border-width: 3px;
+          color: #7d97ad;
+        }
+
+        /* NOTE: Main Picture Container */
+
+        .container {
+          margin-top: 20px;
+        }
+
+        #mainPicture {
+          width: 100%;
+          height: auto;
+          margin-top: 20px;
+        }
+
+        main, footer {
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+
+        h2 {
+          font-style: italic;
+          color: blue;
+          font-size: 3vw;
+          font-family:sans-serif;
+          text-shadow: 2px 2px lightgray;
+        }
+
+        figcaption {
+          text-align: center;
+          font-size: 2vw;
+          text-shadow: 2px 2px lightgray;
+          color:green;
+        }
+
+        /* NOTE: Animal Pictures Section */
+
+        section *{
+          width: 100%;
+          height: auto;
+        }
+
+        .leftPicture {
+          margin-left: 0px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+        }
+
+        .middlePicture {
+          margin-left: 0px;
+          margin-right: 50px;
+          margin-bottom: 50px;
+        }
+
+        .rightPicture {
+          margin-left: 0px;
+          margin-right: 0px;
+          margin-bottom: 0px;
+        }
+
+        figure {
+          width: 100%;
+          height: auto;
+          float:none;
+        }
+
+        #swan, #sparrow, #eagle {
+          width: 100%;
+          height: auto;
+        }
+
+        a {
+          font-size:20px;
+        }
+
+        p {
+          font-size: 20px;
+          text-align: justify;
+          background-color: rgb(233,233,234);
+          padding: 40px;
+        }
+
+        /* NOTE: Responsive Design Query */
+
+        @media screen and (min-width: 830px) {
+          figure {
+            float: left;
+            width: 43%;
+          }
+          p {font-size: 22px;}
+        }
+
+        @media screen and (min-width: 1600px) {
+          figure {
+            float: left;
+            width: 31%;
+          }
+          p {font-size: 24px;}
+        }
+
+      </style>
+
+  </head>
+
+  <body>
+    <!-- header section includes logo, h1 and h3 headlines and hr line-->
+    <header>
+      <img src="https://cdn.slant.co/e006efd5-2498-4b36-852f-dc4c956c14b0/-/format/jpeg/-/progressive/yes/-/preview/480x480/" class="logo" alt="Udacity Logo">
+      <div class="headlines">
+        <h1>KENAN YILDIRIM</h1>
+        <h3>FRONT-END NINJA</h3>
+      </div>
+    </header>
+
+    <hr/>
+  
+    <main>
+      <div class="container">
+        <img src="https://cdn.pixabay.com/photo/2017/04/11/15/55/animals-2222007__340.jpg" id="mainPicture" alt="animals">
+      </div>
+      <!-- NOTE: Headline and Paragraph Section -->
+      <div>
+        <h2>Animals</h2>
+        <p>Animals are multicellular eukaryotic organisms that form the biological kingdom Animalia. With few exceptions, animals consume organic material, breathe oxygen, are able to move, reproduce sexually, and grow from a hollow sphere of cells, the blastula, during embryonic development. Over 1.5 million living animal species have been described—of which around 1 million are insects—but it has been estimated there are over 7 million animals in total. Animals range in length from 8.5 millionths of a metre to 33.6 metres (110 ft) and have complex interactions with each other and their environments, forming intricate food webs. The study of animals is called zoology.</p>
+      </div>
+      <!-- NOTE: Includes Animal Pictures -->
+        <section>
+          <h2>Animal Pictures</h2>
+          <figure class="leftPicture">
+            <img src="https://cdn.pixabay.com/photo/2018/05/05/15/43/swan-3376622__340.jpg" id="swan" alt="swan">
+            <figcaption>SWAN<a href="https://github.com/udacity/Appify/"><br/>https://github.com/udacity/Appify/</a></figcaption>
+          </figure>
+          <figure class="middlePicture">
+            <img src="https://cdn.pixabay.com/photo/2018/04/30/06/32/sparrow-3361874__340.jpg" id="sparrow" alt="sparrow">
+            <figcaption>SPARROW<a href="https://github.com/udacity/Appify/"><br/>https://github.com/udacity/Appify/</a></figcaption>
+          </figure>
+          <figure class="rightPicture">
+            <img src="https://cdn.pixabay.com/photo/2018/05/01/17/30/adler-3366239__340.jpg" id="eagle" alt="eagle">
+            <figcaption>EAGLE<a href="https://github.com/udacity/Appify/"><br/>https://github.com/udacity/Appify/</a></figcaption>
+          </figure>
+        </section>
+    </main>
+  </body>
+</html>
